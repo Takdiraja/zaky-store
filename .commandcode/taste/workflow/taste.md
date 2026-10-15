@@ -1,0 +1,16 @@
+# workflow
+- Feature requests come as detailed written specs — a document in docs/*.md or a structured markdown spec in chat (sections like Objective, Functional Requirements, Error Handling, Performance, Security, Deliverables); implement by following the spec and reference it when reporting back. Confidence: 0.6
+- Before building a new module (page, store, dialog), read the existing analogous module (e.g., pengeluaran/expense flow) and mirror its architecture so the new feature is consistent with the codebase. Confidence: 0.5
+- After changes, verify with tsc, lint, and build, and report that checks are clean or back to the pre-existing baseline (pre-existing errors are tolerated, no new warnings). Confidence: 0.5
+- Destructive operations (e.g., deleting a transaction) must go through a confirmation dialog, restore related state (stock), reconcile side effects (customer debt), and be recorded in the audit log. Confidence: 0.55
+- Any user-initiated destructive action that cancels/aborts a pending transaction flow needs its own confirmation dialog before executing. Confidence: 0.6
+- Resolve ambiguous product-scope decisions (default theme, dark-mode scope, feature count) via clarifying questions and lock them before implementing a large feature. Confidence: 0.55
+- Audit/review deliverables should present findings as a prioritized list with severity, impact, estimated effort, and recommended implementation order, plus concrete executable next steps — not just analysis. Confidence: 0.5
+- For large UI refactors, present design deliverables first — information architecture, wireframes, component tree, responsive layout, design tokens, implementation plan — and get approval before writing code. Confidence: 0.8
+- UI refactors are presentation-layer only: preserve business logic, keep full feature parity, and never remove or redesign existing features during a restyle. Confidence: 0.75
+- Never kill or restart a dev server the user already has running — reuse it for smoke tests and leave it untouched; don't fight it over the port with a duplicate server. Confidence: 0.6
+- Final verification includes a smoke test of the served routes over HTTP (curl each route for 200 and grep the served HTML for the new components), not just tsc/lint/test/build. Confidence: 0.6
+- When overhauling a subsystem (e.g., the printing stack), preserve the existing business logic and maintain backward compatibility — keep existing public APIs/signatures working via thin delegation shims so no existing caller breaks. Confidence: 0.65
+- Before implementing a large improvement, first deliver root-cause analysis (why the issue occurs), a proposed solution, and an impact assessment on existing functionality, then get approval — diagnose before building. Confidence: 0.7
+- Git workflow is direct-to-main: stage everything (`git add -A`) and commit + push to `origin/main` immediately when asked (e.g., an explicit "push to main" command) — no feature branches, PRs, or review gates. Confidence: 0.7
+- Commits include the required `Co-authored-by: CommandCodeBot <noreply@commandcode.ai>` trailer, and are preceded by a final `tsc` + test pass to confirm the tree builds before pushing. Confidence: 0.5
