@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">KEDAI ZAKY 93</string>
+    <string name="title_activity_main">KEDAI ZAKY 93</string>
+    <string name="package_name">id.zakystore.app</string>
+    <string name="custom_url_scheme">id.zakystore.app</string>
+</resources>

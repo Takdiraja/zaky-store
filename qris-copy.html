@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copy QRIS KEDAI ZAKI93</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:600px;margin:40px auto;padding:20px;background:#1a1a2e;color:#eee}
+button{background:#e63946;color:#fff;border:none;padding:16px 32px;font-size:18px;border-radius:8px;cursor:pointer;width:100%}
+button:active{transform:scale(.98)}
+#msg{text-align:center;margin-top:16px;min-height:24px;color:#4ade80}
+code{word-break:break-all;background:#16213e;padding:12px;border-radius:8px;display:block;margin-top:16px;font-size:12px}
+</style>
+</head>
+<body>
+<h2>QRIS KEDAI ZAKI93</h2>
+<p>Tekan tombol untuk copy string QRIS lengkap (192 karakter), lalu paste di Pengaturan → QRIS Toko.</p>
+<button onclick="copyQris()">📋 Copy String QRIS</button>
+<div id="msg"></div>
+<code id="qris">00020101021126570011ID.DANA.WWW011893600915389562965302098956296530303UMI51440014ID.CO.QRIS.WWW0215ID10253993819000303UMI5204549953033605802ID5912KEDAI ZAKI936013Kota Makassar61059021263045DF8</code>
+<script>
+function copyQris(){
+  const t=document.getElementById('qris').innerText;
+  navigator.clipboard.writeText(t).then(()=>{
+    document.getElementById('msg').innerText='✅ Tercopy! ('+t.length+' karakter) — paste di aplikasi.';
+  });
+}
+</script>
+</body>
+</html>

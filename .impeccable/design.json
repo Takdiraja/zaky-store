@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-15T00:00:00.000Z",
+  "title": "Design System: Warung Resoyudan",
+  "extensions": {
+    "colorMeta": {
+      "counter-blue": { "role": "primary", "displayName": "Counter Blue", "canonical": "#2563eb", "tonalRamp": ["#10006C", "#000090", "#002DB5", "#1754DB", "#3878FF", "#589CFF", "#7AC1FF", "#9CE6FF"] },
+      "emerald-primary": { "role": "primary", "displayName": "Kiosk Emerald", "canonical": "#059669", "tonalRamp": ["#001D00", "#003B00", "#005B00", "#007B22", "#059E45", "#43C166", "#6BE588", "#91FFAB"] },
+      "sunset-primary": { "role": "primary", "displayName": "Kiosk Sunset", "canonical": "#ea580c", "tonalRamp": ["#380000", "#5A0000", "#7D2100", "#A14400", "#C66600", "#EC8829", "#FFAB53", "#FFCF79"] },
+      "royal-primary": { "role": "primary", "displayName": "Kiosk Royal", "canonical": "#7c3aed", "tonalRamp": ["#1F0054", "#36007A", "#4E1BA0", "#6739C7", "#8057EE", "#9977FF", "#B298FF", "#CBBEFF"] },
+      "rose-primary": { "role": "primary", "displayName": "Kiosk Rose", "canonical": "#e11d48", "tonalRamp": ["#4B0016", "#6D001F", "#910028", "#B60332", "#DC2954", "#FF5778", "#FF8096", "#FFA8B6"] },
+      "ruby-primary": { "role": "primary", "displayName": "Kiosk Ruby", "canonical": "#dc2626", "tonalRamp": ["#4A0000", "#710000", "#980000", "#C00003", "#E83531", "#FF5F54", "#FF8576", "#FFAA99"] },
+      "paper": { "role": "neutral", "displayName": "Kiosk Paper", "canonical": "#f8fafc", "tonalRamp": ["#0F172A", "#2B3A52", "#47566E", "#63728B", "#808FA6", "#9DAAC0", "#BAC7DD", "#D7E2F8"] },
+      "card": { "role": "neutral", "displayName": "Kiosk Card", "canonical": "#ffffff", "tonalRamp": ["#0F172A", "#2B3A52", "#47566E", "#63728B", "#808FA6", "#9DAAC0", "#BAC7DD", "#D7E2F8"] },
+      "ink": { "role": "neutral", "displayName": "Kiosk Ink", "canonical": "#0f172a", "tonalRamp": ["#0F172A", "#2B3A52", "#47566E", "#63728B", "#808FA6", "#9DAAC0", "#BAC7DD", "#D7E2F8"] },
+      "ink-muted": { "role": "neutral", "displayName": "Kiosk Ink Muted", "canonical": "#475569", "tonalRamp": ["#0F172A", "#2B3A52", "#47566E", "#63728B", "#808FA6", "#9DAAC0", "#BAC7DD", "#D7E2F8"] },
+      "line": { "role": "neutral", "displayName": "Kiosk Line", "canonical": "#e2e8f0", "tonalRamp": ["#0F172A", "#2B3A52", "#47566E", "#63728B", "#808FA6", "#9DAAC0", "#BAC7DD", "#D7E2F8"] },
+      "container-low": { "role": "neutral", "displayName": "Container Low", "canonical": "#f1f5f9", "tonalRamp": ["#0F172A", "#2B3A52", "#47566E", "#63728B", "#808FA6", "#9DAAC0", "#BAC7DD", "#D7E2F8"] },
+      "container": { "role": "neutral", "displayName": "Container", "canonical": "#e9eef5", "tonalRamp": ["#0F172A", "#2B3A52", "#47566E", "#63728B", "#808FA6", "#9DAAC0", "#BAC7DD", "#D7E2F8"] },
+      "container-high": { "role": "neutral", "displayName": "Container High", "canonical": "#e2e8f0", "tonalRamp": ["#0F172A", "#2B3A52", "#47566E", "#63728B", "#808FA6", "#9DAAC0", "#BAC7DD", "#D7E2F8"] },
+      "surface-tint": { "role": "primary", "displayName": "Surface Tint", "canonical": "#2563eb", "tonalRamp": ["#10006C", "#000090", "#002DB5", "#1754DB", "#3878FF", "#589CFF", "#7AC1FF", "#9CE6FF"] },
+      "success": { "role": "status", "displayName": "Kiosk Success", "canonical": "#16a34a", "tonalRamp": ["#001D00", "#003B00", "#005B00", "#007B22", "#059E45", "#43C166", "#6BE588", "#91FFAB"] },
+      "warning": { "role": "status", "displayName": "Kiosk Warning", "canonical": "#d97706", "tonalRamp": ["#380000", "#5A0000", "#7D2100", "#A14400", "#C66600", "#EC8829", "#FFAB53", "#FFCF79"] },
+      "danger": { "role": "status", "displayName": "Kiosk Danger", "canonical": "#dc2626", "tonalRamp": ["#4A0000", "#710000", "#980000", "#C00003", "#E83531", "#FF5F54", "#FF8576", "#FFAA99"] },
+      "info": { "role": "status", "displayName": "Kiosk Info", "canonical": "#2563eb", "tonalRamp": ["#10006C", "#000090", "#002DB5", "#1754DB", "#3878FF", "#589CFF", "#7AC1FF", "#9CE6FF"] },
+      "error": { "role": "status", "displayName": "Kiosk Error", "canonical": "#ba1a1a", "tonalRamp": ["#460000", "#6B0000", "#910000", "#B90010", "#DE2437", "#FF4F5A", "#FF7D83", "#FFA9AC"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Rarely used; large totals and hero headlines only." },
+      "headline": { "displayName": "Headline", "purpose": "Page titles, dialog titles, section headers, card titles." },
+      "title": { "displayName": "Title", "purpose": "Product prices on cards, metric labels at large." },
+      "body": { "displayName": "Body", "purpose": "Default reading text and input values." },
+      "label": { "displayName": "Label", "purpose": "Buttons, field labels, nav items, active chip text." },
+      "caption": { "displayName": "Caption", "purpose": "Helper text, unit prices, footers, stock counts." },
+      "overline": { "displayName": "Overline", "purpose": "KPI card labels, eyebrow text, nav group headers." },
+      "numeric-display": { "displayName": "Numeric Display", "purpose": "Large money figures, always tabular numerals." }
+    },
+    "shadows": [
+      { "name": "card-rest", "value": "0 1px 2px 0 rgb(0 0 0 / 0.04)", "purpose": "Every card, list row, chart card at rest." },
+      { "name": "card-hover", "value": "0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.04)", "purpose": "Interactive cards under pointer." },
+      { "name": "fab-glow", "value": "0 8px 16px -4px rgb(37 99 235 / 0.25)", "purpose": "Floating cart bar, scan FAB, primary floating actions." },
+      { "name": "dialog", "value": "0 20px 25px -5px rgb(0 0 0 / 0.07), 0 8px 10px -6px rgb(0 0 0 / 0.04)", "purpose": "Dialogs, bottom sheets, select popovers." }
+    ],
+    "motion": [
+      { "name": "ease-out-quart", "value": "cubic-bezier(0.25, 1, 0.5, 1)", "purpose": "Default transition easing." },
+      { "name": "ease-spring", "value": "cubic-bezier(0.34, 1.56, 0.64, 1)", "purpose": "Delightful spring overshoot for the flying-ball arc and cart bounce." },
+      { "name": "cart-bounce", "value": "scale 1.3 -> 0.9 -> 1.0 over 0.5s", "purpose": "Cart bar feedback when an item is added." },
+      { "name": "badge-pulse", "value": "scale 1.15 x2 over 0.4s", "purpose": "Count-bubble pulse on add-to-cart." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The decisive action on every screen — filled accent, white label, soft glow.",
+      "html": "<button class=\"ds-btn-primary\">Simpan Transaksi</button>",
+      "css": ".ds-btn-primary { font-family: 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif; font-size: 14px; font-weight: 600; color: #ffffff; background: #2563eb; border: none; border-radius: 12px; height: 48px; padding: 0 20px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; box-shadow: 0 8px 16px -4px rgb(37 99 235 / 0.25); transition: background 0.2s, transform 0.1s; } .ds-btn-primary:hover { background: #1d4ed8; } .ds-btn-primary:active { transform: scale(0.98); } .ds-btn-primary:focus-visible { outline: 3px solid rgb(37 99 235 / 0.4); outline-offset: 2px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary actions — hairline border on white, ink text.",
+      "html": "<button class=\"ds-btn-outline\">Simpan Draft</button>",
+      "css": ".ds-btn-outline { font-family: 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif; font-size: 14px; font-weight: 600; color: #0f172a; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; height: 48px; padding: 0 20px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; transition: background 0.2s, transform 0.1s; } .ds-btn-outline:hover { background: #f1f5f9; } .ds-btn-outline:active { transform: scale(0.98); } .ds-btn-outline:focus-visible { outline: 3px solid rgb(37 99 235 / 0.4); outline-offset: 2px; }"
+    },
+    {
+      "name": "Category Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Pill filter for categories and periods. Selected = filled accent, unselected = hairlined card.",
+      "html": "<div style=\"display:flex;gap:8px;font-family:'Hanken Grotesk',sans-serif\"><button class=\"ds-chip\">Semua</button><button class=\"ds-chip ds-chip-active\">Makanan</button><button class=\"ds-chip\">Minuman</button></div>",
+      "css": ".ds-chip { font-size: 14px; font-weight: 500; color: #475569; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 9999px; padding: 8px 16px; cursor: pointer; transition: all 0.2s; } .ds-chip:hover { background: #f1f5f9; } .ds-chip:active { transform: scale(0.96); } .ds-chip-active { color: #ffffff; background: #2563eb; border-color: #2563eb; box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.06); } .ds-chip-active:hover { background: #1d4ed8; }"
+    },
+    {
+      "name": "Status Badge",
+      "kind": "chip",
+      "refersTo": "badge-success",
+      "description": "Constant-colored state pill — a debt is amber and an out-of-stock is red in every theme.",
+      "html": "<div style=\"display:flex;gap:8px;font-family:'Hanken Grotesk',sans-serif\"><span class=\"ds-badge ds-badge-success\">Lunas</span><span class=\"ds-badge ds-badge-warning\">Belum Lunas</span><span class=\"ds-badge ds-badge-danger\">Menunggak</span></div>",
+      "css": ".ds-badge { font-size: 12px; font-weight: 600; border-radius: 9999px; height: 24px; padding: 0 10px; display: inline-flex; align-items: center; } .ds-badge-success { color: #16a34a; background: rgb(22 163 74 / 0.1); } .ds-badge-warning { color: #d97706; background: rgb(217 119 6 / 0.1); } .ds-badge-danger { color: #dc2626; background: rgb(220 38 38 / 0.1); }"
+    },
+    {
+      "name": "KPI Card",
+      "kind": "card",
+      "refersTo": "kpi-card",
+      "description": "Metric card: overline label, bold tabular value, tinted icon tile.",
+      "html": "<div class=\"ds-kpi\"><div class=\"ds-kpi-top\"><span class=\"ds-kpi-label\">Penjualan Hari Ini</span><span class=\"ds-kpi-icon\">Rp</span></div><div class=\"ds-kpi-value\">Rp1.250.000</div><div class=\"ds-kpi-footer\">8 transaksi</div></div>",
+      "css": ".ds-kpi { font-family: 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 20px; box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.04); width: 220px; } .ds-kpi-top { display: flex; justify-content: space-between; align-items: center; } .ds-kpi-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #475569; } .ds-kpi-icon { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 12px; background: rgb(37 99 235 / 0.1); color: #2563eb; font-size: 12px; font-weight: 700; } .ds-kpi-value { margin-top: 12px; font-size: 30px; font-weight: 700; letter-spacing: -0.02em; color: #0f172a; font-variant-numeric: tabular-nums; } .ds-kpi-footer { margin-top: 4px; font-size: 12px; font-weight: 500; color: #475569; }"
+    },
+    {
+      "name": "List Row",
+      "kind": "card",
+      "refersTo": "list-row",
+      "description": "Tappable row: leading tile, title/subtitle, trailing value, chevron.",
+      "html": "<button class=\"ds-row\"><span class=\"ds-row-leading\">MG</span><span class=\"ds-row-body\"><span class=\"ds-row-title\">Minyak Goreng</span><span class=\"ds-row-sub\">Stok: 12</span></span><span class=\"ds-row-trail\">Rp25.000</span><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m9 18 6-6-6-6\"/></svg></button>",
+      "css": ".ds-row { font-family: 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif; display: flex; align-items: center; gap: 12px; width: 100%; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 16px; box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.04); cursor: pointer; text-align: left; transition: box-shadow 0.2s, transform 0.1s; } .ds-row:hover { box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05); } .ds-row:active { transform: scale(0.99); } .ds-row-leading { flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 12px; background: #f1f5f9; color: #475569; font-size: 12px; font-weight: 700; } .ds-row-body { flex: 1; min-width: 0; } .ds-row-title { display: block; font-size: 16px; font-weight: 600; color: #0f172a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .ds-row-sub { display: block; margin-top: 2px; font-size: 14px; color: #475569; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .ds-row-trail { flex-shrink: 0; font-size: 14px; font-weight: 600; color: #0f172a; font-variant-numeric: tabular-nums; }"
+    },
+    {
+      "name": "Input Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "48px field, 12px radius, accent border + soft 4px glow on focus.",
+      "html": "<div style=\"font-family:'Hanken Grotesk',sans-serif;width:240px\"><label style=\"font-size:14px;font-weight:600;color:#475569;display:block;margin-bottom:8px\">Nama Produk</label><input class=\"ds-input\" type=\"text\" placeholder=\"Indomie Goreng\"/></div>",
+      "css": ".ds-input { font-family: 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif; font-size: 16px; color: #0f172a; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; height: 48px; width: 100%; padding: 0 16px; box-sizing: border-box; transition: border-color 0.2s, box-shadow 0.2s; } .ds-input::placeholder { color: #475569; opacity: 0.6; } .ds-input:focus { outline: none; border-color: #2563eb; box-shadow: 0 0 0 4px rgb(37 99 235 / 0.15); } .ds-input:disabled { opacity: 0.5; background: #f1f5f9; cursor: not-allowed; }"
+    },
+    {
+      "name": "Product Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "The kasir product tile — image surface, name, bold price, stock, and a full-width Tambah button.",
+      "html": "<div class=\"ds-product\"><div class=\"ds-product-img\"><span class=\"ds-product-badge\">★</span></div><div class=\"ds-product-info\"><span class=\"ds-product-cat\">Sembako</span><span class=\"ds-product-name\">Indomie Goreng</span><span class=\"ds-product-price\">Rp3.500</span><span class=\"ds-product-stock\">Stok: 25</span></div><button class=\"ds-product-add\">Tambah</button></div>",
+      "css": ".ds-product { font-family: 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 12px; box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.04); width: 168px; transition: box-shadow 0.2s; } .ds-product:hover { box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05); } .ds-product-img { position: relative; aspect-ratio: 1 / 1; border-radius: 12px; background: #f1f5f9; display: flex; align-items: center; justify-content: center; color: #64748b; } .ds-product-badge { position: absolute; top: 6px; left: 6px; display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 9999px; background: #d97706; color: #fff; font-size: 14px; } .ds-product-info { display: grid; grid-template-columns: 1fr auto; gap: 4px 8px; margin-top: 12px; } .ds-product-cat { grid-column: 1 / -1; font-size: 12px; font-weight: 500; color: #475569; } .ds-product-name { grid-column: 1 / -1; font-size: 16px; font-weight: 600; line-height: 1.3; color: #0f172a; } .ds-product-price { font-size: 20px; font-weight: 700; color: #0f172a; font-variant-numeric: tabular-nums; } .ds-product-stock { font-size: 12px; font-weight: 500; color: #475569; align-self: end; } .ds-product-add { margin-top: 12px; font-family: inherit; font-size: 14px; font-weight: 600; color: #fff; background: #2563eb; border: none; border-radius: 12px; height: 44px; width: 100%; cursor: pointer; transition: background 0.2s, transform 0.1s; } .ds-product-add:hover { background: #1d4ed8; } .ds-product-add:active { transform: scale(0.98); }"
+    },
+    {
+      "name": "Nav Item",
+      "kind": "nav",
+      "refersTo": "list-row",
+      "description": "Drawer nav row — active is accent-tinted, inactive is ink-muted with a container-high hover.",
+      "html": "<nav style=\"font-family:'Hanken Grotesk',sans-serif;width:220px\"><a class=\"ds-nav\" href=\"#\">Kasir</a><a class=\"ds-nav ds-nav-active\" href=\"#\">Dashboard</a><a class=\"ds-nav\" href=\"#\">Produk</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: 12px; font-size: 16px; font-weight: 500; color: #475569; text-decoration: none; transition: background 0.2s; } .ds-nav:hover { background: #e2e8f0; } .ds-nav-active { color: #2563eb; font-weight: 600; background: rgb(37 99 235 / 0.1); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Corner Kiosk",
+    "overview": "Warung Resoyudan is built like the counter of a well-run neighborhood warung: warm and approachable on the surface, but every tap lands exactly where the owner expects. The design reads as a friendly helper behind the counter — bright paper surfaces, a single confident accent color, soft corners, and type that speaks plainly. Nothing is decorative for its own sake; everything exists so a sale can be recorded in seconds while a customer waits. The system's philosophy is warm efficiency. Forms are soft and tactile so the interface feels physically forgiving during a busy day, while hierarchy stays sharp so the owner never hunts: one obvious action per screen, statuses told in constant colors, money always in bold tabular figures. Depth is expressed softly — cards sit on the page with whisper-light shadows and a tonal surface ramp; the accent color is used freely enough to keep the screen alive, but always as the signal for action.",
+    "keyCharacteristics": [
+      "Mobile-first, one-hand operational: 48px touch targets and sticky action bars throughout.",
+      "Soft, tactile forms: 8–24px radius scale, warm corner language, gentle ambient shadows.",
+      "One type family (Hanken Grotesk), hierarchy by weight and size, not by font switch.",
+      "A single accent color per theme carries every action; status colors are theme-independent constants.",
+      "Money is always bold and tabular; every figure reads like a ledger line.",
+      "Real-data honesty: surfaces treat live Firestore data as the only truth; empty states guide, never fake."
+    ],
+    "rules": [
+      { "name": "The Constant-Signals Rule", "body": "Status colors never ride the theme. A debt is amber and an out-of-stock is red in every palette, because the owner must read the store's health at a glance without relearning colors.", "section": "colors" },
+      { "name": "The One-Accent Rule", "body": "Each screen reads through a single accent color from the active theme. Never introduce a second hue for decoration; extra hues belong to status and charts only.", "section": "colors" },
+      { "name": "The Paper-Under-Ink Rule", "body": "Text never sits directly on a colored background except white-on-accent for actions. Secondary text is Kiosk Ink Muted on Paper or Card, never a mid-gray on a mid-gray.", "section": "colors" },
+      { "name": "The Money-Line Rule", "body": "Every currency figure uses bold weight and tabular numerals (tabular-nums), so columns of prices line up and scan like a ledger.", "section": "typography" },
+      { "name": "The Weight-Only Rule", "body": "Never swap families for emphasis. Emphasis is weight (700/600) and size — a single family keeps the counter fast to read.", "section": "typography" },
+      { "name": "The 48-Pixel Floor Rule", "body": "Any control a customer-facing flow depends on is at least 48px tall and wide. One-hand operation is a product promise, not a nicety.", "section": "layout" },
+      { "name": "The Ambient-Only Rule", "body": "Shadows signal rest and slight lift, never depth drama. No hard or wide dark shadows anywhere; when something must feel deeper, raise the tonal layer instead.", "section": "elevation" },
+      { "name": "The Pill-For-One Rule", "body": "Pill shapes mean 'this is a state or a filter.' Anything that performs an action is a rounded rectangle. A pill that triggers a flow, or a rectangle used as a status tag, breaks the grammar.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do ship exactly one primary action per screen, filled with the accent (e.g. \"Simpan Transaksi\", \"Konfirmasi & Bayar\").",
+      "Do keep status signals in the constant palette — success/warning/danger survive any theme switch.",
+      "Do make every primary touch target at least 48px; treat the kasir flow as the measure of the whole system.",
+      "Do set money in bold tabular numerals; totals on the checkout path get the accent color.",
+      "Do reserve pills for states and filters, rounded rectangles for actions.",
+      "Do use the accent glow (0 8px 16px -4px <accent>/25) for floating action bars and FABs.",
+      "Do keep the surface tonal ramp for depth whenever a shadow would be too heavy."
+    ],
+    "donts": [
+      "Don't mix theme accents — one palette per app, always.",
+      "Don't use the accent as a decorative fill on read-only content; accent means action.",
+      "Don't add hard or wide dark shadows; depth is ambient and tonal.",
+      "Don't switch fonts for emphasis — weight and size only.",
+      "Don't re-theme status colors; a debt is amber and an out-of-stock is red in every theme.",
+      "Don't render money without tabular numerals, or totals without bold weight."
+    ]
+  }
+}
