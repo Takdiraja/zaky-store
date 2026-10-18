@@ -12,19 +12,13 @@ if [ -d "src/app/serwist" ]; then
   MOVED=1
 fi
 
+rm -rf .next
+
 trap 'if [ "$MOVED" = "1" ]; then mv /tmp/warung-serwist-bak src/app/serwist; fi' EXIT
 
 # Tulis info build (versi + waktu) agar user bisa cek versi APK terinstall
 # di Pengaturan > Tentang.
-BUILD_TIME=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-GIT_HASH=$(git rev-parse --short HEAD 2>/dev/null || echo "nogit")
-cat > src/lib/build-info.ts << EOF
-// Auto-generated saat build. JANGAN edit manual.
-export const BUILD_TIME = "$BUILD_TIME";
-export const GIT_HASH = "$GIT_HASH";
-export const APP_VERSION = "1.0.0+$GIT_HASH";
-EOF
-echo "Build info: $APP_VERSION @ $BUILD_TIME"
+node scripts/gen-build-info.js
 
 CAPACITOR_BUILD=1 pnpm build
 
