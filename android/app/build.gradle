@@ -1,4 +1,11 @@
 apply plugin: 'com.android.application'
+import groovy.json.JsonSlurper
+
+// Baca versi otomatis dari package.json (Single Source of Truth)
+def pkgJsonFile = rootProject.file("../package.json")
+def pkgJson = pkgJsonFile.exists() ? new JsonSlurper().parseText(pkgJsonFile.text) : [:]
+def appVersionCode = ((pkgJson.versionCode ?: 6) as Integer)
+def appVersionName = (pkgJson.version ?: "1.0.5").toString()
 
 // Release signing: baca dari android/keystore.properties (gitignored).
 // Kalau file tidak ada, build release pakai debug key (jangan untuk distribusi).
@@ -15,8 +22,8 @@ android {
         applicationId "id.zakystore.app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 6
-        versionName "1.0.5"
+        versionCode appVersionCode
+        versionName appVersionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.

@@ -40,6 +40,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# android & build
+*.apk
+.serwist-temp-bak/
+
 # serwist
 public/sw*
 public/serwist-worker*

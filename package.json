@@ -1,10 +1,13 @@
 {
   "name": "zaky-store",
   "version": "1.0.5",
+  "versionCode": 6,
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "node scripts/gen-build-info.js && next build",
+    "sync:android": "node scripts/sync-android.js",
+    "bump-version": "node scripts/bump-version.js",
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
